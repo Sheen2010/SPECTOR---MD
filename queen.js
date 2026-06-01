@@ -20,7 +20,7 @@ const express = require("express");
 const app = express();
 const por = require("./session");
 const port = por.PORT;
-const ownerNumber = ["94717775628"];
+const ownerNumber = ["94702981539" "94726462447" ];
 if (!app) return;
 // Session directory
 const SESSION_DIR = "./sessions";
@@ -29,7 +29,7 @@ const sess = require("./session");
 async function sessdl() {
   try {
     // Extract the Base64 encoded session data
-    const base64Data = sess.SESSION_ID.split("ANJU-XPRO~")[1];
+    const base64Data = sess.SESSION_ID.split("SPECTOR-KING~")[1];
     if (!base64Data) {
       throw new Error("Invalid SESSION_ID format - missing Base64 data");
     }
@@ -91,7 +91,7 @@ async function connectToWA() {
   const getPrefix = () => config.PREFIX;
   const getWelcome = () => config.WELCOME;
   //===========================
-  console.log("🔥 QUEEN ANJU XPRO is starting...");
+  console.log("🔥 KING SPECTOR is starting...");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/sessions/"
   );
@@ -119,9 +119,9 @@ async function connectToWA() {
       console.log("connected to whatsapp ✅");
       // Assuming `config` contains all the settings
       let up = `
-          🚀 **© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚 Connected Successfully!** ✅ 
+          🚀 **© KING SPECTOR 𝗑ᴾᴿᴼ 💚 Connected Successfully!** ✅ 
           
-          --- **🎉 Welcome to © 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚!** 🎉 
+          --- **🎉 Welcome to © KING SPECTOR 𝗑ᴾᴿᴼ 💚!** 🎉 
           ✦» 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${require("./package.json").version}
           ✦» 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
           ✦» 𝙷𝚘𝚜𝚝 : ${os.hostname()}
@@ -150,7 +150,7 @@ async function connectToWA() {
             config.AUTORECORDING ? "Enabled" : "Disabled"
           }
       
-          --- Thank you for using **© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚**. 
+          --- Thank you for using **© KING SPECTOR  𝗑ᴾᴿᴼ 💚**. 
           We're here to make your experience enjoyable and seamless. 
           If you need any help or have questions, don't hesitate to ask. 
           
@@ -165,11 +165,11 @@ async function connectToWA() {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: "120363299978149557@newsletter",
-            newsletterName: "© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚",
+            newsletterName: "© KING SPECTOR 𝗑ᴾᴿᴼ 💚",
             serverMessageId: 999,
           },
           externalAdReply: {
-            title: "© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚",
+            title: "© KING SPECTOR𝚄 𝗑ᴾᴿᴼ 💚",
             body: " ©𝐌𝐑 𝐑𝐀𝐒𝐇𝐌𝐈𝐊𝐀 𝐎𝐅𝐂 💚",
             mediaType: 1,
             sourceUrl: "https://github.com/Mrrashmika",
@@ -401,7 +401,7 @@ async function connectToWA() {
 }
 if (!app) return;
 app.get("/", (req, res) => {
-  res.send("hey I am alive, Queen_Anju Is started✅");
+  res.send("hey I am alive, KING_SPECTOR Is started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
